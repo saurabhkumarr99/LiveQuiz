@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="33.6_InstantQuiz_student.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instant Quiz</h1>
+        <div class="container1">
+
+            <div id="logo">Logo</div>
+
+            <div id="navbar">
+                <nav>
+                    <a href="http://127.0.0.1:5500/33.1_InstantQuiz_home.html">Home</a>
+                        <a href="http://127.0.0.1:5500/33.5_InstantQuiz_student.html">Student Panel</a>
+                        <a href="http://127.0.0.1:5500/33.7_InstantQuiz_about.html">About Project</a>
+                </nav>
+            </div>
+
+            <div id="social">
+                <nav>
+                    <a href="">twitter</a>
+                    <a href="">facebook</a>
+                    <a href="">Instagram</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <main>
+
+            <div class="container3">
+                <h3>Give Your Quiz Test</h3>
+                <hr>
+                Name : <input type="text" placeholder="Your Name Please" id="Student_name"><br>
+                Prandom No. : <input type="text" placeholder="Write The Prandom No. here" id="prdNo."><br>
+                <!-- <button onclick="startQuiz()">Start Quiz</button> -->
+                <button id="startQuiz">Start Quiz</button>
+                <div id="error3" class="error"></div>
+            </div>
+        </main>
+        <div id="container3">
+            <h3 id="Q_N"></h3>
+            <ol id="Q_list"> </ol>           
+            <div id="submit"></div>
+        </div>
+        <div id="check">
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Created by Saurabh Kumar Rai</p>
+        <address>
+            <p>Youtube|twitter|Instagram|Facebook</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>

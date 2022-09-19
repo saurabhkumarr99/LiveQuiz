@@ -1,0 +1,167 @@
+body {
+    /* background-color: rgb(250, 243, 215); */
+    background-image: url(quiz_background_3.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    font-size: 30px;
+}
+
+header {
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 10px;
+}
+
+.container1 {
+    display: flex;
+    font-size: 30px;
+}
+
+#navbar {
+    position: relative;
+    left: 640px;
+    width: 600px;
+}
+
+#navbar a {
+    text-decoration: none;
+    border: blue solid 3px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+#social {
+    margin-left: 1000px;
+}
+
+#social a {
+    text-decoration: none;
+}
+
+section {
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+button {
+    /* border: blue solid 3px; */
+    border-radius: 17px;
+    /* width: 200px; */
+    background-color: #8b83d8;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#admin{
+    border: solid black 1px;
+    border-radius: 25px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(90, 89, 89);
+    width: 500px;
+    color: aliceblue;
+}
+
+#sign_out{
+    margin-left: 1200px;
+}
+
+#sign_in_box{
+    display: none;
+}
+
+#sign_up_box{
+    display: block;
+}
+
+button:hover {
+    background-color: dimgray;
+}
+
+main {
+    display: flex;
+}
+
+.container2 {
+    border: solid red 5px;
+    background-color: #f1edec;
+    width: 45%;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+.error {
+    color: #c90909;
+    font-size: 30px;
+}
+
+.box1 {
+    border: solid black 3px;
+    width: 95%;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+.question {
+    border: solid black 1px;
+    margin: 3px;
+    padding: 2px;
+    text-align: left;
+}
+
+.prandom {
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin-left: 20px;
+    ;
+    padding: 3px;
+    color: blueviolet;
+    text-align: center;
+}
+
+
+.container3 {
+    border: solid black 4px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: solid black 3px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.live_quiz {
+    border: solid black 2px;
+    margin: 4px;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: black;
+}
+
+footer {
+    /* background-color: cadetblue; */
+    text-align: center;
+}

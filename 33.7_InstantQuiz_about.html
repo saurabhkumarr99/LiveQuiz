@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <style>
+        .container4 {
+            display: flex;
+        }
+
+        .box2 {
+            border: solid red 5px;
+            background-color: rgb(210, 214, 189);
+            width: 25%;
+            margin: 10px auto;
+        }
+
+        .box3 {
+            border: solid black 3px;
+            background-color: darkgrey;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Instant Quiz</h1>
+        <div class="container1">
+
+            <div id="logo">Logo</div>
+
+            <div id="navbar">
+                <nav>
+                    <a href="http://127.0.0.1:5500/33.1_InstantQuiz_home.html">Home</a>
+                    <a href="http://127.0.0.1:5500/33.2_InstantQuiz_student.html">Student Panel</a>
+                    <a href="http://127.0.0.1:5500/33.7_InstantQuiz_about.html">About Project</a>
+                </nav>
+            </div>
+
+            <div id="social">
+                <nav>
+                    <a href="">twitter</a>
+                    <a href="">facebook</a>
+                    <a href="">Instagram</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container4">
+            <div class="box2">
+                <h3>Admin Panel</h3>
+                <div class="box3">
+                    <h3>Create Quiz</h3>
+                    <p>1-Quiz object send to JSON Server.<br>---></p>
+                    <p>2-Admin Start Quiz and share a Prandom No. to student</p>
+                </div>
+                <p>9-Data fetched from JSON Server<---< /p>
+                        <div class="box3">
+                            <h3>All Quizess</h3>
+                            <p>10-All Student name with their marks will shown in Response</p>
+                        </div>
+
+            </div>
+
+            <div class="box2">
+                <h3>Json Server</h3>
+                <div class="box3">
+                    <p>3-Data stored in JSON Server</p>
+                    <p>{ "Quiz_Name": "First Quiz",<br>
+                        "que": [{ "Question": "Question 1", "Answer": "Answer ", "Optons": ["Option1", "Option2",
+                        "Option3",, "Option4"] }]
+                        }</p>
+                </div>
+                <p>8-Data updated on JSON Server</p>
+            </div>
+
+            <div class="box2">
+                <h3>Student panel</h3>
+                <div class="box3">
+                    <h3>Start Quiz </h3>
+                    <p>4-Student start quiz using prandom no.</p>
+                    <p>-->5-Student Give Quiz</p>
+                </div>
+                <div class="box3">
+                    <h3>Response</h3>
+                    <p>6-Student Submit quiz</p>
+                </div>
+                <p>
+                    <---7-Marks will be calculated and stored on JSON Server along wih Student Name</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Created by Saurabh Kumar Rai</p>
+        <address>
+            <p>Youtube|twitter|Instagram|Facebook</p>
+        </address>
+    </footer>
+</body>
+
+</html>

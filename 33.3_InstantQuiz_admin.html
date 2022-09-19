@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <script type="text/javascript" src="jquery-1.12.4.min.js"> </script>
+    <script src="33.4_InstantQuiz_admin.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            //Create Quiz Name
+            $('#CreateQuizName').click(Quiz.CreateQuizName);
+
+            //Create Question
+            $('#CreateQuestion').click(Quiz.CreateQuestion);
+
+            //Admin logout
+            $('#sign_out').click(sign_out);
+        });
+
+        //Create Quiz
+        $(document).on('click', '#CreateQuiz', function () {
+            Quiz.CreateQuiz();
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instant Quiz</h1>
+        <div class="container1">
+
+            <div id="logo">Logo</div>
+
+            <div id="navbar">
+                <nav>
+                    <nav>
+                        <a href="http://127.0.0.1:5500/33.1_InstantQuiz_home.html">Home</a>
+                        <a href="http://127.0.0.1:5500/33.5_InstantQuiz_student.html" target="_blank">Student Panel</a>
+                        <a href="http://127.0.0.1:5500/33.7_InstantQuiz_about.html" target="_blank">About Project</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <button id="sign_out">Sign Out</button>
+        </div>
+    </header>
+
+    <section>
+
+
+        <div id="admin_info" style="color: rgb(6, 6, 182); font-size: 45px;">
+            <script>admin_panel()</script>
+        </div>
+        <main>
+            <div class="container2" id="container2.1">
+                <div class="box1">
+                    <h1>Create Quiz</h1>
+                    Quiz Name : <input type="text" id="FormName">
+                    <div class="error" id="error1"></div>
+                    <button id="CreateQuizName">Create</button>
+                    <hr>
+                    Question : <input type="text" id="Question" value="Question" placeholder="Question">
+                    Answer : <select name="answer" id="answer" style="font-size: 20px;">
+                        <option value="Option1">Option 1</option>
+                        <option value="Option2">Option 2</option>
+                        <option value="Option3">Option 3</option>
+                        <option value="Option4">Option 4</option>
+                    </select> <br>
+                    Options : <input type="text" id="opt1" placeholder="Option1" value="Option1"> <input type="text"
+                        id="opt2" placeholder="Option2" value="Option2">
+                    <input type="text" id="opt3" placeholder="Option3" value="Option3"> <input type="text" id="opt4"
+                        placeholder="Option4" value="Option4"><br>
+                    <!-- <button onclick="Quiz.CreateQuestion()">Add Question</button> -->
+                    <button id="CreateQuestion">Add Question</button>
+                    <div class="error" id="error2"></div>
+                </div>
+
+                <div id="box2">
+                    <div id="box2.1">
+
+                    </div>
+                    <div id="box2.2">
+
+                    </div>
+                    <div id="box2.3">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <div class="box1">
+                    <h3>All Quizess</h3>
+                    <hr>
+                    <ol id="QuizList">
+                        <script>AllQuiz()</script>
+                    </ol>
+                </div>
+
+            </div>
+        </main>
+
+
+
+    </section>
+
+    <footer>
+        <hr>
+        <p>Created by Saurabh Kumar Rai</p>
+        <address>
+            <p>Youtube|twitter|Instagram|Facebook</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>
