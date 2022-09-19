@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">>
+    <script type="text/javascript" src="jquery-1.12.4.min.js"> </script>
+    <script src="33.2_InstantQuiz_home.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sign_up').click(sign_up);
+
+            $('#sign_in').click(sign_in);
+
+            //Admin registration
+            $('#register').click(register);
+
+            //Admin login
+            $('#login').click(login);
+
+
+            // css styling using jquery
+            $("input").css({
+                "font-size": "25px",
+                "width": "350px",
+                "margin": "10px"
+            });
+
+            $("button").css({
+                "font-size": "35px",
+                "width": "40%",
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instant Quiz</h1>
+        <div class="container1">
+
+            <div id="logo">Logo</div>
+
+            <div id="navbar">
+                <nav>
+                    <nav>
+                        <a href="http://127.0.0.1:5500/33.1_InstantQuiz_home.html">Home</a>
+                        <a href="http://127.0.0.1:5500/33.5_InstantQuiz_student.html" target="_blank">Student Panel</a>
+                        <a href="http://127.0.0.1:5500/33.7_InstantQuiz_about.html" target="_blank">About Project</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <div id="social">
+                <nav>
+                    <a href="">twitter</a>
+                    <a href="">facebook</a>
+                    <a href="">Instagram</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <main>
+
+            <div id="admin">
+                <button id="sign_up" style="background-color: rgb(155, 213, 194);">Sign Up</button>
+                <button id="sign_in" style="background-color: darkgrey;">Sign In</button>
+
+                <div id="sign_up_box">
+                    <h3>Sign UP</h3>
+                    <input type="text" placeholder="First Name" id="user_fname">
+                    <input type="text" placeholder="Last Name" id="user_lname">
+                    <input type="text" placeholder="User Name" id="user_uname">
+                    <input type="password" placeholder="Set A Password" id="user_password">
+                    <input type="email" placeholder="email" id="user_email"><br>
+                    <button id="register">Register</button>
+                </div>
+
+                <div id="sign_in_box">
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="User Name" id="admin_fname">
+                    <input type="password" placeholder="Password" id="admin_password"><br>
+                    <button id="login">Login</button>
+                </div>
+
+                <div id="error1" class="error"></div>
+
+            </div>
+        </main>
+
+    </section>
+
+    <footer>
+        <hr>
+        <p>Created by Saurabh Kumar Rai</p>
+        <address>
+            <p>Youtube|twitter|Instagram|Facebook</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>
