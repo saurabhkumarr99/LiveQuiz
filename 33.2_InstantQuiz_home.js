@@ -64,7 +64,7 @@ function login() {
             if (user.id) {
                 sessionStorage.setItem("admin_name", user.fname);
                 sessionStorage.setItem("admin_userid", user.uname);
-                window.location = 'http://127.0.0.1:5500/33.3_InstantQuiz_admin.html';
+                window.location = 'https://github.com/saurabhkumarr99/LiveQuiz/blob/main/33.3_InstantQuiz_admin.html';
             } else {
                 sign_up();
             }
