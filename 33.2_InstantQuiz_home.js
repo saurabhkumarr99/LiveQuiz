@@ -57,7 +57,7 @@ function login() {
 
         //fetch all registered users
         allUsers().then(users => {
-
+                console.log(users);
             //validation
             var user = validation(users, admin);
 
