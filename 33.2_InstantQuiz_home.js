@@ -57,7 +57,7 @@ function login() {
 
         //fetch all registered users
         allUsers().then(users => {
-                console.log(users);
+
             //validation
             var user = validation(users, admin);
 
@@ -85,6 +85,7 @@ async function allUsers() {
 
 function validation(users, admin) {
     var user = 0;
+     console.log(typeof(users));
     users.forEach(element => {
         console.log(JSON.stringify(users));
         if (element.uname == admin.uname) {
