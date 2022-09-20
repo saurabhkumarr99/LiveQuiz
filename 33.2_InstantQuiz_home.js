@@ -90,7 +90,7 @@ console.log(JSON.stringify(users));
         if (element.uname == admin.uname) {
             if (element.password == admin.password) {
                 user = element;
-                console.log(JSON.stringify(user));
+                console.log((user));
                 //return user;
             }
         }
