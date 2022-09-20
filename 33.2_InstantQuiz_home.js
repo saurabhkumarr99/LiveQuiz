@@ -60,7 +60,7 @@ function login() {
                 console.log(users);
             //validation
             var user = validation(users, admin);
-
+console.log(user);
             if (user.id) {
                 sessionStorage.setItem("admin_name", user.fname);
                 sessionStorage.setItem("admin_userid", user.uname);
