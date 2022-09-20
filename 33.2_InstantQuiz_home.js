@@ -85,18 +85,18 @@ async function allUsers() {
 
 function validation(users, admin) {
     var user = 0;
-
+console.log(JSON.stringify(users));
     users.forEach(element => {
         if (element.uname == admin.uname) {
             if (element.password == admin.password) {
                 user = element;
                 console.log(JSON.stringify(user));
-                return user;
+                //return user;
             }
         }
     });
 
-    return user;
+   // return user;
 }
 
 
