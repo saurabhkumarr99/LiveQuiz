@@ -60,7 +60,7 @@ function login() {
                 console.log(users);
             //validation
             var user = validation(users, admin);
-console.log(user);
+
             if (user.id) {
                 sessionStorage.setItem("admin_name", user.fname);
                 sessionStorage.setItem("admin_userid", user.uname);
@@ -85,8 +85,8 @@ async function allUsers() {
 
 function validation(users, admin) {
     var user = 0;
-console.log(JSON.stringify(users));
     users.forEach(element => {
+        console.log(JSON.stringify(users));
         if (element.uname == admin.uname) {
             if (element.password == admin.password) {
                 user = element;
