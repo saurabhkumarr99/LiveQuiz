@@ -86,6 +86,7 @@ async function allUsers() {
 function validation(users, admin) {
     var user = 0;
      console.log(typeof(users));
+    console.log(JSON.stringify(users));
     users.forEach(element => {
         console.log(JSON.stringify(users));
         if (element.uname == admin.uname) {
