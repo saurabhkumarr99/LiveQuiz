@@ -18,7 +18,7 @@ function register() {
     if (user.fname == "" || user.uname == "" || user.password == "") {
         document.getElementById("error1").innerHTML = "First Name , User Name and Password is required";
     } else {
-        fetch(' http://localhost:3001/Users', {
+        fetch('https://saurabhkumarr99.github.io/database/Users.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function login() {
 
 
 async function allUsers() {
-    const res = await fetch('http://localhost:3001/Users');
+    const res = await fetch('https://saurabhkumarr99.github.io/database/Users.json');
 
     var users = await res.json();
 
