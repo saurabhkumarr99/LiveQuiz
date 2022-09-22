@@ -18,7 +18,7 @@ function register() {
     if (user.fname == "" || user.uname == "" || user.password == "") {
         document.getElementById("error1").innerHTML = "First Name , User Name and Password is required";
     } else {
-        fetch('https://saurabhkumarr99.github.io/database/Users.json', {
+        fetch('https://saurabhkumarr99.github.io/database/db.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,9 +57,10 @@ function login() {
 
         //fetch all registered users
         allUsers().then(users => {
-
+            
+            let {Users}=users;
             //validation
-            var user = validation(users, admin);
+            var user = validation(Users, admin);
 
             if (user.id) {
                 sessionStorage.setItem("admin_name", user.fname);
@@ -75,7 +76,7 @@ function login() {
 
 
 async function allUsers() {
-    const res = await fetch('https://mocki.io/v1/11e1add6-f7e1-4ba2-8263-18d678304e54');
+    const res = await fetch('https://saurabhkumarr99.github.io/database/db.json');
 
     var users = await res.json();
 
@@ -94,12 +95,12 @@ function validation(users, admin) {
                 user = element;
                  console.log((element));
                 console.log((user));
-                //return user;
+                return user;
             }
         }
     });
 
-   // return user;
+   return user;
 }
 
 
