@@ -75,7 +75,7 @@ function login() {
 
 
 async function allUsers() {
-    const res = await fetch('https://saurabhkumarr99.github.io/database/Users.json');
+    const res = await fetch('https://mocki.io/v1/11e1add6-f7e1-4ba2-8263-18d678304e54');
 
     var users = await res.json();
 
@@ -92,6 +92,7 @@ function validation(users, admin) {
         if (element.uname == admin.uname) {
             if (element.password == admin.password) {
                 user = element;
+                 console.log((element));
                 console.log((user));
                 //return user;
             }
