@@ -20,8 +20,7 @@ header {
 
 #navbar {
     position: relative;
-    left: 640px;
-    width: 600px;
+    left: 450px;
 }
 
 #navbar a {
@@ -33,7 +32,7 @@ header {
 }
 
 #social {
-    margin-left: 1000px;
+    margin-left: auto;
 }
 
 #social a {
