@@ -35,12 +35,8 @@ button {
     margin: 10px auto;
     padding: 20px;
     background-color: rgb(90, 89, 89);
-    width: 400px;
+    width: 350px;
     color: aliceblue;
-}
-
-#sign_out{
-    margin-left: 1200px;
 }
 
 #sign_in_box{
@@ -79,10 +75,6 @@ button:hover {
     text-align: center;
 }
 
-/* input {
-    width: 300px;
-} */
-
 .question {
     border: solid black 1px;
     margin: 3px;
@@ -95,7 +87,6 @@ button:hover {
     border-radius: 10px;
     background-color: aquamarine;
     margin-left: 20px;
-    ;
     padding: 3px;
     color: blueviolet;
     text-align: center;
