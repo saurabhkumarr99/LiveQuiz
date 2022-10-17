@@ -67,8 +67,8 @@
                             data-lang="About-Project">About Project</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li id="sign_up"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="sign_in"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li></span>
                         <select name="language" id="language" style="font-size: 20px;" onchange='language()'>
                             <option value="English" type="button">English</option>
@@ -85,9 +85,6 @@
         <main>
 
             <div id="admin" class="container-fluid">
-                <button id="sign_up" style="background-color: rgb(155, 213, 194);">Sign Up</button>
-                <button id="sign_in" style="background-color: darkgrey;">Sign In</button>
-
                 <div id="sign_up_box">
                     <h3>Sign UP</h3>
                     <input type="text" placeholder="First Name" id="user_fname">
