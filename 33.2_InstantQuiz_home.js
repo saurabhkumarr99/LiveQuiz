@@ -1,3 +1,10 @@
+function language(){
+    var lan = $("#language option:selected").val();
+    sessionStorage.setItem("admin_lang", lan);
+    localStorage.setItem("admin_lang", lan);
+    localization(lan);
+}
+
 function sign_up() {
     document.getElementById("sign_in").style.backgroundColor = "darkgrey";
     document.getElementById("sign_up").style.backgroundColor = "rgb(155, 213, 194)";
