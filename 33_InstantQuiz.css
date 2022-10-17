@@ -13,32 +13,6 @@ header {
     padding: 10px;
 }
 
-.container1 {
-    display: flex;
-    font-size: 25px;
-}
-
-#navbar {
-    position: relative;
-    left: 490px;
-}
-
-#navbar a {
-    text-decoration: none;
-    border: blue solid 3px;
-    border-radius: 5px;
-    background-color: blueviolet;
-    color: aliceblue;
-}
-
-#social {
-    margin-left: auto;
-}
-
-#social a {
-    text-decoration: none;
-}
-
 section {
     /* background-color: aquamarine; */
     text-align: center;
@@ -79,10 +53,6 @@ button {
 
 button:hover {
     background-color: dimgray;
-}
-
-main {
-    display: flex;
 }
 
 .container2 {
