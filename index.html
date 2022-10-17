@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="33_InstantQuiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
     <script src="33.2_InstantQuiz_home.js"></script>
+     <script src="localizaton.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -43,30 +46,32 @@
 <body>
 
     <header>
-        <h1>Instant Quiz</h1>
-        <div class="container1">
-
-            <div id="logo">Logo</div>
-
-            <div id="navbar">               
-                    <nav>
-                        <a href="https://saurabhkumarr99.github.io/LiveQuiz/">Home</a>
-                        <a href="https://saurabhkumarr99.github.io/Instant_Quiz_Student/" target="_blank">Student Panel</a>
-                       <a href="https://saurabhkumarr99.github.io/Instant_Quiz_About_Us/">About Project</a>
-                        <a href="https://github.com/saurabhkumarr99/LiveQuiz/blob/main/index2.html">page2</a>
-                        
-                    </nav>               
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="font-size: 25px;">Instant Quiz</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://127.0.0.1:5501/33.1_InstantQuiz_home.html"
+                            data-lang="home">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/33.5_InstantQuiz_student.html" target="_blank"
+                            data-lang="Student-Panel">Student Panel</a></li>
+                    <li><a href="http://127.0.0.1:5501/33.7_InstantQuiz_about.html" target="_blank"
+                            data-lang="About-Project">About Project</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li></span>
+                        <select name="language" id="language" style="font-size: 20px;" onchange='language()'>
+                            <option value="English" type="button">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Arab">Arab</option>
+                        </select>
+                    </li>
+                </ul>
             </div>
-
-            <div id="social">
-                <nav>
-                    <a href="">twitter</a>
-                    <a href="">facebook</a>
-                    <a href="">Instagram</a>
-                </nav>
-            </div>
-
-        </div>
+        </nav>
     </header>
 
     <section>
@@ -101,12 +106,14 @@
     </section>
 
     <footer>
-        <hr>
-        <p>Created by Saurabh Kumar Rai</p>
-        <address>
-            <p>Youtube|twitter|Instagram|Facebook</p>
-        </address>
+        <div data-lang="creater">Saurabh Kumar Rai</div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/saurabhkumarr99" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/saurabh-kumar-rai-36531a222/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/saurabhkumarr99" class="fa fa-github"></a>
+        <a href="#" class="fa fa-instagram"></a>
     </footer>
+    <script>localise()</script>
 
 </body>
 
