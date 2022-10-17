@@ -6,8 +6,6 @@ function language(){
 }
 
 function sign_up() {
-    document.getElementById("sign_in").style.backgroundColor = "darkgrey";
-    document.getElementById("sign_up").style.backgroundColor = "rgb(155, 213, 194)";
     document.getElementById("sign_up_box").style.display = "block";
     document.getElementById("sign_in_box").style.display = "none";
     document.getElementById("error1").innerHTML = "";
@@ -43,8 +41,6 @@ function register() {
 }
 
 function sign_in() {
-    document.getElementById("sign_in").style.backgroundColor = "rgb(155, 213, 194)";
-    document.getElementById("sign_up").style.backgroundColor = "darkgrey";
     document.getElementById("sign_up_box").style.display = "none";
     document.getElementById("sign_in_box").style.display = "block";
     document.getElementById("error1").innerHTML = "";
