@@ -1,7 +1,7 @@
 var locale = "en";
 
 function localization(lan) {
-alert("localization added");
+
     if (lan == "English") {
         locale = "en";
         //console.log(document.querySelectorAll("[data-lang]"));
