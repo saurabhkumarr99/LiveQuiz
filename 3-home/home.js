@@ -68,8 +68,7 @@ function login() {
             if (user.id) {
                 sessionStorage.setItem("admin_name", user.fname);
                 sessionStorage.setItem("admin_userid", user.uname);
-                //window.location = 'https://saurabhkumarr99.github.io/Instant_Quiz_admin/';
-                window.location = 'https://saurabhkumarr99.github.io/LiveQuiz/Instant_Quiz_admin.html';
+                window.location = 'https://saurabhkumarr99.github.io/LiveQuiz/4-admin/admin.html';
                 
             } else {
                 sign_up();
