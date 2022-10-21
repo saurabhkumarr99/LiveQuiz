@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-1.12.4.min.js"> </script>
+    <script src="33.4_InstantQuiz_admin.js"></script>
+    <script type="text/javascript" src="localization.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Create Quiz Name
+            $('#CreateQuizName').click(Quiz.CreateQuizName);
+
+            //Create Question
+            $('#CreateQuestion').click(Quiz.CreateQuestion);
+
+            //Admin logout
+            $('#sign_out').click(sign_out);
+        });
+
+        //Create Quiz
+        $(document).on('click', '#New_Quiz', function () {
+           document.getElementById("container2-1").style.display="block";
+           document.getElementById("container2-2").style.display="none";
+        });
+
+        $(document).on('click', '#all_quizzes', function () {
+            document.getElementById("container2-1").style.display="none";
+           document.getElementById("container2-2").style.display="block";
+        });
+        
+        //Create Quiz
+        $(document).on('click', '#CreateQuiz', function () {
+            Quiz.CreateQuiz();
+        });
+
+    </script>
+    
+</head>
+
+<body>
+<header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Instant Quiz</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://saurabhkumarr99.github.io/LiveQuiz/"
+                            data-lang="home">Home</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_Student/" target="_blank"
+                            data-lang="Student-Panel">Student Panel</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_About_Us/" target="_blank"
+                            data-lang="About-Project">About Project</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="sign_out"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+
+        <div id="admin_info" style="color: rgb(6, 6, 182); font-size: 45px;">
+            <script>admin_panel()</script>
+        </div>
+            <button id="New_Quiz">Create New Quiz</button>
+            <button id="all_quizzes">All Quiz</button>
+            <div class="container2 container-fluid" id="container2-1" style="display: none;">
+                <div class="box1">
+                    <h1  data-lang="Create_Quiz">Create Quiz</h1>
+                    Quiz Name : <input type="text" id="FormName">
+                    <div class="error" id="error1"></div>
+                    <button id="CreateQuizName" data-lang="Create">Create</button>
+                    <hr>
+                    Question : <input type="text" id="Question" value="Question" placeholder="Question">
+                    Answer : <select name="answer" id="answer" style="font-size: 20px;">
+                        <option value="Option1">Option 1</option>
+                        <option value="Option2">Option 2</option>
+                        <option value="Option3">Option 3</option>
+                        <option value="Option4">Option 4</option>
+                    </select> <br>
+                    Options : <input type="text" id="opt1" placeholder="Option1" value="Option1"> <input type="text"
+                        id="opt2" placeholder="Option2" value="Option2">
+                    <input type="text" id="opt3" placeholder="Option3" value="Option3"> <input type="text" id="opt4"
+                        placeholder="Option4" value="Option4"><br>
+                    <!-- <button onclick="Quiz.CreateQuestion()">Add Question</button> -->
+                    <button id="CreateQuestion" data-lang="Add_Question">Add Question</button>
+                    <div class="error" id="error2"></div>
+                </div>
+
+                <div id="box2">
+                    <div id="box2.1">
+
+                    </div>
+                    <div id="box2.2">
+
+                    </div>
+                    <div id="box2.3">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container2 container-fluid" id="container2-2">
+                <div class="box1">
+                    <h3 data-lang="All_Quizess">All Quizess</h3>
+                    <hr>
+                    <ol id="QuizList">
+                        <script>AllQuiz()</script>
+                    </ol>
+                </div>
+
+            </div>
+    </section>
+
+  <footer>
+        <div data-lang="creater">Saurabh Kumar Rai</div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/saurabhkumarr99" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/saurabh-kumar-rai-36531a222/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/saurabhkumarr99" class="fa fa-github"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </footer>
+    <script>localise()</script>
+
+</body>
+
+</html>
