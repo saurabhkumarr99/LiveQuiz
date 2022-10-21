@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="localization.js"></script>
+    <script>
+        //localization
+        function localise() {
+            var lan = localStorage.getItem("admin_lang");
+            localization(lan);
+        }
+    </script>
+     
+</head>
+
+<body>
+   <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Instant Quiz</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://saurabhkumarr99.github.io/LiveQuiz/"
+                            data-lang="home">Home</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_Student/" target="_blank"
+                            data-lang="Student-Panel">Student Panel</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_About_Us/" target="_blank"
+                            data-lang="About-Project">About Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container4">
+            <div class="box2">
+                <h3 data-lang="admin_h1">Admin Panel</h3>
+                <div class="box3">
+                    <h3 data-lang="Create_Quiz">Create Quiz</h3>
+                    <p data-lang="admin_p1">1-Quiz object send to JSON Server.</p>--->
+                    <p data-lang="admin_p2"> 2-Admin Start Quiz and share a Prandom No. to student</p>
+                </div>
+                <p data-lang="admin_p3">9-Data fetched from JSON Server<--- </p>
+                        <div class="box3">
+                            <h3 data-lang="All_Quizess">All Quizess</h3>
+                            <p data-lang="admin_p4">10-All Student name with their marks will shown in Response</p>
+                        </div>
+
+            </div>
+
+            <div class="box2">
+                <h3 data-lang="json_h1">Json Server</h3>
+                <div class="box3">
+                    <p data-lang="json_p1">3-Data stored in JSON Server</p>
+                    <p>{ "Quiz_Name": "First Quiz",<br>
+                        "que": [{ "Question": "Question 1", "Answer": "Answer ", "Optons": ["Option1", "Option2",
+                        "Option3",, "Option4"] }]
+                        }</p>
+                </div>
+                <p data-lang="json_p3">8-Data updated on JSON Server</p>
+            </div>
+
+            <div class="box2">
+                <h3 data-lang="Student-Panel">Student panel</h3>
+                <div class="box3">
+                    <h3 data-lang="stud_h2">Start Quiz </h3>
+                    <p data-lang="stud_p1">4-Student start quiz using prandom no.</p>
+                    <p data-lang="stud_p2">-->5-Student Give Quiz</p>
+                </div>
+                <div class="box3">
+                    <h3 data-lang="stud_h3">Response</h3>
+                    <p data-lang="stud_p3">6-Student Submit quiz</p>
+                </div>
+                <p data-lang="stud_p4">
+                    <---7-Marks will be calculated and stored on JSON Server along wih Student Name</p>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+        <div data-lang="creater">Saurabh Kumar Rai</div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/saurabhkumarr99" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/saurabh-kumar-rai-36531a222/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/saurabhkumarr99" class="fa fa-github"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </footer>
+    <script>localise()</script>
+</body>
+
+</html>
