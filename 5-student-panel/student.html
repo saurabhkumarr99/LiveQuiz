@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-1.12.4.min.js"> </script>
+    <script type="text/javascript" src="localization.js"></script>
+    <script src="33.6_InstantQuiz_student.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Instant Quiz</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://saurabhkumarr99.github.io/LiveQuiz/"
+                            data-lang="home">Home</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_Student/" target="_blank"
+                            data-lang="Student-Panel">Student Panel</a></li>
+                    <li><a href="https://saurabhkumarr99.github.io/Instant_Quiz_About_Us/" target="_blank"
+                            data-lang="About-Project">About Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <main>
+
+            <div class="container3">
+                <h3>Give Your Quiz Test</h3>
+                <hr>
+                Name : <input type="text" placeholder="Your Name Please" id="Student_name"><br>
+                Prandom No. : <input type="text" placeholder="Write The Prandom No. here" id="prdNo."><br>
+                <!-- <button onclick="startQuiz()">Start Quiz</button> -->
+                <button id="startQuiz">Start Quiz</button>
+                <div id="error3" class="error"></div>
+            </div>
+        </main>
+        <div id="container3">
+            <h3 id="Q_N"></h3>
+            <ol id="Q_list"> </ol>           
+            <div id="submit"></div>
+        </div>
+        <div id="check">
+        </div>
+    </section>
+
+   <footer>
+        <div data-lang="creater">Saurabh Kumar Rai</div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/saurabhkumarr99" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/saurabh-kumar-rai-36531a222/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/saurabhkumarr99" class="fa fa-github"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </footer>
+    <script>localise()</script>
+
+</body>
+
+</html>
