@@ -18,26 +18,6 @@ header {
     font-size: 25px;
 }
 
-#navbar {
-    position: relative;
-    left: 490px;
-}
-
-#navbar a {
-    text-decoration: none;
-    border: blue solid 3px;
-    border-radius: 5px;
-    background-color: blueviolet;
-    color: aliceblue;
-}
-
-#social {
-    margin-left: auto;
-}
-
-#social a {
-    text-decoration: none;
-}
 
 section {
     /* background-color: aquamarine; */
